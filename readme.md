@@ -1,0 +1,1 @@
+A simple discord bot that checks if a player or a guild is active on warmane, by making an API request to the armory and returning the result to the discord chat.

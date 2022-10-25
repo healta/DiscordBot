@@ -3,7 +3,7 @@ import discord
 import json
 
 #Discord token can be acquired from the discord app as just a regular user.
-TOKEN = "OTg5NDYyNzAxMjkyMDE1NjE2.GPhTzM.8tK2Yry0WSdLg84BqI3FpfoJkPfVFFQBl38lOs"
+TOKEN = ""
 
 intents = discord.Intents.default()
 

@@ -29,9 +29,9 @@ async def on_message(message):
         jdata = json.loads(apidata.text)
 
         if jdata.get("online") is False:
-            await message.channel.send(cmd + " is offline :(")
+            await message.channel.send(cmd + " is offline \u274C")
         else:
-            await message.channel.send(cmd+ " is online :)")
+            await message.channel.send(cmd+ " is online \u2705")
 
 #checks if guild is active and reports back in chat, to be active message needs to start with "#"        
     elif message.content.startswith('#'):
@@ -49,7 +49,7 @@ async def on_message(message):
 
         for i in jdata["roster"]:
             if i["online"]==True:
-                await message.channel.send(i["name"] + " is online :)")
+                await message.channel.send(i["name"] + " is online \u2705")
                 counter+=1
 
         await message.channel.send("There are {} online players from {}".format(counter,guildrequest))
